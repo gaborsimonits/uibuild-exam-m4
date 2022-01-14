@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: transparent;
+	font-family: inherit;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a img {
+	border: none;
+}
+
+button,
+a {
+	cursor: pointer;
+	color: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+button,
+textarea,
+select {
+	-moz-appearance: none !important;
+	appearance: none !important;
+	-webkit-appearance: none !important;
+	border-radius: 0;
+}
+
+body {
+	background-color: #c0ebf9;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#form {
+	width: 100%;
+	max-width: 520px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 25px;
+	color: #467745;
+
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+input {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #467745;
+
+	display: block;
+	width: 100%;
+	height: 64px;
+	/* max-width: 600px; */
+	margin-bottom: 20px;
+	background-color: white;
+}
+
+input::placeholder {
+	opacity: 0.5;
+	padding-left: 20px;
+}
+
+/* .txtarea-pholder::placeholder {
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+} */
+
+textarea {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #467745;
+
+	display: block;
+	width: 100%;
+	height: 120px;
+	/* max-width: 600px; */
+
+	padding-top: 20px;
+
+	background-color: white;
+}
+
+textarea::placeholder {
+	opacity: 0.5;
+	padding-left: 20px;
+}
+
+.checkbox-privacypolicy {
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	gap: 10px;
+	align-items: center;
+}
+.checkbox-privacypolicy a {
+	text-decoration: underline;
+}
+
+.checkbox-privacypolicy p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+
+	color: #467745;
+}
+
+.checkbox-newsletter {
+	display: flex;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+	gap: 10px;
+	align-items: center;
+}
+
+.checkbox-newsletter p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+
+	color: #467745;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	transform: translateY(10px);
+	appearance: none;
+}
+
+button {
+	font-family: "Poppins", sans-serif;
+	font-size: 21px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #c0ebf9;
+	background-color: #467745;
+
+	width: 280px;
+	height: 80px;
+
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		text-align: left;
+	}
+	/* input {
+		width: calc(100% - 40px);
+	}
+	textarea {
+		width: calc(100% - 40px);
+	} */
+	button {
+		width: 250px;
+	}
+}
